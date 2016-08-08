@@ -1,6 +1,9 @@
 import groovy.json.JsonSlurper
+import hudson.FilePath
 
-File f = new File('repos.json')
+hudson.FilePath workspace = hudson.model.Executor.currentExecutor().getCurrentWorkspace()
+File f = new File("${workspace}/repos.json")
+
 def slurper = new JsonSlurper()
 def jsonText = f.getText()
 projects = slurper.parseText(jsonText)
