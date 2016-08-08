@@ -1,0 +1,30 @@
+{
+    "agent-events-router_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/agent_events_router",
+        "branch": "develop"
+    },
+    "agent_events_collector_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/agent_events_collector",
+        "branch": "develop"
+    },
+    "curator_pipeline": {
+        "url": "ssh://git@code.reactorsecurity.net:2222/reactor/curator.git",
+        "branch": "master"
+    },
+    "kafka-to-es_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/kafka_to_es",
+        "branch": "develop"
+    },
+    "memcached_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/memcached",
+        "branch": "master"
+    },
+    "ninjas_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/ninjas",
+        "branch": "feature/mesos-docker"
+    },
+    "scaler_pipeline": {
+        "url": "ssh://git@code.reactorsecurity.net:2222/reactor/scaler.git",
+        "branch": "master"
+    }
+}
