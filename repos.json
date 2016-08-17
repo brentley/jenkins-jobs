@@ -15,6 +15,10 @@
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/chronos",
         "branch": "master"
     },
+    "pgbouncer_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/pgbouncer",
+        "branch": "master"
+    },
     "agent-events-router_pipeline": {
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/agent_events_router",
         "branch": "develop"
