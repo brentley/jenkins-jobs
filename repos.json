@@ -1,4 +1,20 @@
 {
+    "git-server_pipeline": {
+        "url": "https://github.com/brentley/git-server.git",
+        "branch": "master"
+    },
+    "registry_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/registry",
+        "branch": "master"
+    },
+    "kafka_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/kafka",
+        "branch": "master"
+    },
+    "chronos_pipeline": {
+        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/chronos",
+        "branch": "master"
+    },
     "agent-events-router_pipeline": {
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/agent_events_router",
         "branch": "develop"
@@ -10,14 +26,6 @@
     "kafka-to-es_pipeline": {
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/kafka_to_es",
         "branch": "develop"
-    },
-    "registry_pipeline": {
-        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/registry",
-        "branch": "master"
-    },
-    "git-server_pipeline": {
-        "url": "https://github.com/brentley/git-server.git",
-        "branch": "master"
     },
     "ninjas_pipeline": {
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/ninjas",
