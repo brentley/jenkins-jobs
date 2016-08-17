@@ -11,10 +11,6 @@
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/kafka_to_es",
         "branch": "develop"
     },
-    "memcached_pipeline": {
-        "url": "ssh://git@git-server.marathon.mesos:10022/home/git/memcached",
-        "branch": "master"
-    },
     "registry_pipeline": {
         "url": "ssh://git@git-server.marathon.mesos:10022/home/git/registry",
         "branch": "master"
