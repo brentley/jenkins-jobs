@@ -1,12 +1,12 @@
 // This job will run the required jobs that are necessary in order
 node() {
-    stage 'Building Registry'
-    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*registry.dsl']]
-    build job: 'registry_pipeline'
-
     stage 'Building Git Service'
     build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*gitserver.dsl']]
     build job: 'git-server_pipeline'
+
+    stage 'Building Registry'
+    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*registry.dsl']]
+    build job: 'registry_pipeline'
 
     stage 'Building Kafka'
     build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*kafka.dsl']]
