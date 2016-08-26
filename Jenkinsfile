@@ -5,7 +5,7 @@ node() {
     build job: 'registry_pipeline'
 
     stage 'Building Git Service'
-    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*git-server.dsl']]
+    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*gitserver.dsl']]
     build job: 'git-server_pipeline'
 
     stage 'Building Kafka'

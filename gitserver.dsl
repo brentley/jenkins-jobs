@@ -8,7 +8,7 @@ pipelineJob('git-server_pipeline') {
                             name(null)
                             refspec(null)
                             url('https://github.com/brentley/git-server.git')
-                            crdentialsId(null)
+                            credentialsId(null)
                         }
                     }
                     branches {

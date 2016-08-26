@@ -8,7 +8,7 @@ pipelineJob('registry_pipeline') {
                             name(null)
                             refspec(null)
                             url('ssh://git@git-server.marathon.mesos:10022/home/git/registry')
-                            crdentialsId('ng')
+                            credentialsId('ng')
                         }
                     }
                     branches {
