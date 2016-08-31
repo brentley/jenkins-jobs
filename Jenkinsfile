@@ -18,5 +18,6 @@ node() {
 
     // At this point all other jenkins jobs defined in repos.json will be built and will run based on scm polling
     stage 'Building all other jenkins jobs'
-    build job: 'generate_jenkins_jobs'
+    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*vault.dsl']]
+    build job: 'generate_jenkins_jobs', parameters: [[$class: 'StringParameterValue', name: 'JOB', value: '**/*seed_job.dsl']]
 }
